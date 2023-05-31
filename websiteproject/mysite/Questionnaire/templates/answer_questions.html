@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <html>
+   <head>
+    <title>Questionnaire</title>
+</head>
+<body>
+    <form action="{% url 'submit_quiz' %}" method="post">
+        {% csrf_token %}
+        {% for question in questions %}
+            <h2>{{ question.text }}</h2>
+            {% for answer in question.answer_set.all %}
+
+                    <input type="radio" name="question_{{ question.id }}" value="{{ answer.id }}">
+
+                 <label>{{ answer.text }}</label><br>
+            {% endfor %}
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+
+{% endblock %}
+ </body>
+
+
+
+ </html>

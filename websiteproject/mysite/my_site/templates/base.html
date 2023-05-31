@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PSYMATCH</title>
+
+    <style>
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: #800080 ;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a{
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #A64CA6;
+  color: purple;
+}
+
+   footer  {
+       background-color: blue
+
+   }
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="topnav">
+
+    <a href="/my_site">Home Page</a>
+    <a href="/Accounts">Accounts</a>
+    <a href="/Questionnaire">Questionnaire</a>
+
+
+</div>
+
+{% block content %}
+   <span style="font-family: Arial;color:orange;"> <h2> WELCOME TO PSYMATCH!</h2> </span>
+  <span style="font-family: Arial;color:#c55127;"> <p> Welcome to our site if you are looking for therapy session please click on "Questionnaire" on the navigation bar and  answer the questions that will help us to find your best match therapist.
+  </span> </p>
+
+    <p>
+        If you are a therapist, please click on "Accounts" on the navigation bar.
+    </p>
+
+    <div class="card">
+        <img src="/static/logo.jpeg" alt="" style="width:23%">
+    </div>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: Purple;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #ff6600;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us </h1>
+  <p>Our most important goal is to make therapy sessions accessible and affordable to everyone.</p>
+  <p>Like the usual therapy sessions , privacy is the key element. You are all secure with us!</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/static/merve.png" alt="Merve" style="width:57%">
+      <div class="container">
+        <h2>Merve Nazlı Kahraman</h2>
+        <p class="title">CEO & Founder</p>
+        <p>We are young entrepreneurs that has goals to fill the gap in the market. </p>
+        <p>mervekahraman@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/selin.png" alt="Selin" style="width:60%">
+      <div class="container">
+        <h2>Selin Aydın</h2>
+        <p class="title">CEO & Founder</p>
+        <p>We are young entrepreneurs that has goals to fill the gap in the market.</p>
+        <p>selinaydin@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/ayse.png" alt="Ayse" style="width:55%">
+      <div class="container">
+        <h2>Ayşe Macit</h2>
+        <p class="title">CEO & Founder</p>
+        <p>We are young entrepreneurs that has goals to fill the gap in the market.</p>
+        <p>aysemacit@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+
+{% endblock %}
+
+
+</body>
+</html>
